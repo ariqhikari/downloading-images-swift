@@ -17,6 +17,7 @@
 		F837FE262A06577A00E98ED9 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F837FE242A06577A00E98ED9 /* MovieTableViewCell.xib */; };
 		F8C0EE012A068CC000F1F444 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C0EE002A068CC000F1F444 /* MovieModel.swift */; };
 		F8C0EE032A06A21600F1F444 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C0EE022A06A21600F1F444 /* ImageDownloader.swift */; };
+		F8E31C322A14BC71003DA148 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E31C312A14BC71003DA148 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F837FE242A06577A00E98ED9 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		F8C0EE002A068CC000F1F444 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		F8C0EE022A06A21600F1F444 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		F8E31C312A14BC71003DA148 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +66,52 @@
 		F837FE0E2A06565B00E98ED9 /* LatihanMengunduhGambar */ = {
 			isa = PBXGroup;
 			children = (
-				F8C0EE022A06A21600F1F444 /* ImageDownloader.swift */,
-				F8C0EE002A068CC000F1F444 /* MovieModel.swift */,
+				F8E31C2D2A14BA66003DA148 /* App */,
+				F8E31C2E2A14BA8C003DA148 /* FileSystem */,
+				F8E31C2F2A14BAB0003DA148 /* NetworkSource */,
+				F8E31C302A14BACE003DA148 /* View */,
+			);
+			path = LatihanMengunduhGambar;
+			sourceTree = "<group>";
+		};
+		F8E31C2D2A14BA66003DA148 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				F837FE0F2A06565B00E98ED9 /* AppDelegate.swift */,
 				F837FE112A06565B00E98ED9 /* SceneDelegate.swift */,
-				F837FE132A06565B00E98ED9 /* ViewController.swift */,
-				F837FE152A06565B00E98ED9 /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F8E31C2E2A14BA8C003DA148 /* FileSystem */ = {
+			isa = PBXGroup;
+			children = (
 				F837FE182A06565D00E98ED9 /* Assets.xcassets */,
 				F837FE1A2A06565D00E98ED9 /* LaunchScreen.storyboard */,
 				F837FE1D2A06565D00E98ED9 /* Info.plist */,
+			);
+			path = FileSystem;
+			sourceTree = "<group>";
+		};
+		F8E31C2F2A14BAB0003DA148 /* NetworkSource */ = {
+			isa = PBXGroup;
+			children = (
+				F8C0EE002A068CC000F1F444 /* MovieModel.swift */,
+				F8C0EE022A06A21600F1F444 /* ImageDownloader.swift */,
+				F8E31C312A14BC71003DA148 /* NetworkService.swift */,
+			);
+			path = NetworkSource;
+			sourceTree = "<group>";
+		};
+		F8E31C302A14BACE003DA148 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F837FE132A06565B00E98ED9 /* ViewController.swift */,
 				F837FE232A06577A00E98ED9 /* MovieTableViewCell.swift */,
 				F837FE242A06577A00E98ED9 /* MovieTableViewCell.xib */,
+				F837FE152A06565B00E98ED9 /* Main.storyboard */,
 			);
-			path = LatihanMengunduhGambar;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +192,7 @@
 				F837FE252A06577A00E98ED9 /* MovieTableViewCell.swift in Sources */,
 				F8C0EE032A06A21600F1F444 /* ImageDownloader.swift in Sources */,
 				F837FE122A06565B00E98ED9 /* SceneDelegate.swift in Sources */,
+				F8E31C322A14BC71003DA148 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JT2XGV66KF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LatihanMengunduhGambar/Info.plist;
+				INFOPLIST_FILE = LatihanMengunduhGambar/FileSystem/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -333,7 +369,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JT2XGV66KF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LatihanMengunduhGambar/Info.plist;
+				INFOPLIST_FILE = LatihanMengunduhGambar/FileSystem/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

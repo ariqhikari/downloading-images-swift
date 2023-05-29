@@ -20,18 +20,24 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="UrW-J3-iI8">
+                                <rect key="frame" x="186.66666666666666" y="450.66666666666669" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N1E-Yf-dDY" secondAttribute="trailing" id="GQA-QI-Fc8"/>
                             <constraint firstItem="N1E-Yf-dDY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="O22-LA-N8H"/>
+                            <constraint firstItem="UrW-J3-iI8" firstAttribute="centerX" secondItem="N1E-Yf-dDY" secondAttribute="centerX" id="O3R-e8-rHD"/>
                             <constraint firstItem="N1E-Yf-dDY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a5F-L1-4m0"/>
+                            <constraint firstItem="UrW-J3-iI8" firstAttribute="centerY" secondItem="N1E-Yf-dDY" secondAttribute="centerY" id="uFO-Rs-SoI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N1E-Yf-dDY" secondAttribute="bottom" id="xnQ-0b-HxB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Popular Movies" id="POu-rz-cMK"/>
                     <connections>
+                        <outlet property="indicatorLoadingMovie" destination="UrW-J3-iI8" id="Z9C-by-35Q"/>
                         <outlet property="movieTableView" destination="N1E-Yf-dDY" id="pBg-Rw-6Sd"/>
                     </connections>
                 </viewController>
